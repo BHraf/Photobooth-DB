@@ -186,7 +186,7 @@ function App() {
       onChange={(vl) => {setValue1(vl);
             filterByDate(vl)
     } }
-    label="by choosing an Interval"
+    label="By selecting a range"
     placeholder="to"
     />
     </div>
