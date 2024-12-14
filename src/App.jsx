@@ -9,6 +9,8 @@ import { StatsRing } from "./Mantine/StatsRing";
 import  image from "./BAF.png";
 import { InputTooltip } from "./Mantine/InputTooltip";
 import { DateInput } from '@mantine/dates';
+const apiUrl = import.meta.env.DB_API_URL;
+const apiKey = import.meta.env.DB_API_KEY;
 
 
 const theme = createTheme({
@@ -23,9 +25,7 @@ function App() {
   const [auth, setAuth] = useState(false);
   const [email, setEmail] = useState("");
   const [mdp, setMdp] = useState("");
-  const apiUrl = import.meta.env.DB_API_URL;
-const apiKey = import.meta.env.DB_API_KEY;
-
+  
 
   const [table, setTable]  = useState(null);
   const [net, setnew]  = useState(null);
