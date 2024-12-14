@@ -23,6 +23,8 @@ function App() {
   const [auth, setAuth] = useState(false);
   const [email, setEmail] = useState("");
   const [mdp, setMdp] = useState("");
+  const apiUrl = import.meta.env.DB_API_URL;
+const apiKey = import.meta.env.DB_API_KEY;
 
 
   const [table, setTable]  = useState(null);
@@ -31,8 +33,7 @@ function App() {
   const [value1, setValue1] =useState(null);
   
   const supabase = createClient(
-    "https://xnpnysxhokmbjlwlmmzs.supabase.co",
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhucG55c3hob2ttYmpsd2xtbXpzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzM5OTU5MTUsImV4cCI6MjA0OTU3MTkxNX0.KwOL_cXdaNADEnTrOhijyFemikb3rh2fJZWxIIu8L3Q"
+    apiUrl, apiKey
   );
 
   function sumPrices(data) {
