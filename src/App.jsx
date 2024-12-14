@@ -75,12 +75,9 @@ function App() {
       email: test,
       password: test1,
     });
-    console.log(data);
     if(data.user != null){
-      console.log("Test");
       const response = await supabase.from("Payment").select();
-    console.log(response.error);
-    console.log(response.data);
+
     setTable(response.data);
     setnew(response.data);
     setAff(true);
@@ -99,23 +96,17 @@ function App() {
   }
 
   function filterByDate(vl) {
-    console.log(net);
     setTable(net);
-    console.log(value);
-    console.log(vl)
+
     if(value&&vl){
       const donn = net.filter((item) => {
         const itemTime = new Date(item.TIME);
-        console.log(item.NUMBER);
-        console.log(itemTime);
-        console.log(CompareDates(itemTime, value));
-        console.log(CompareDates(vl, itemTime));
+
         return (CompareDates(itemTime, value) && CompareDates(vl, itemTime) );
       });
       setTable(donn);
       setValue(null);
       setValue1(null)
-      console.log(table);
     }
     
   }
@@ -137,8 +128,7 @@ function App() {
       } else {
         x = itemTime.getDate();
         y = compareDate.getDate();
-        console.log(x);
-        console.log(y);
+
         if (x >= y) {
           return true;
         } else if (x < y) {

@@ -61,7 +61,6 @@ function TooltipFocus() {
         mt="md"
         value={value}
         onChange={(event) => {setValue(event.currentTarget.value);
-            console.log(value)
         } }
       />
     </Tooltip>
