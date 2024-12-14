@@ -9,8 +9,8 @@ import { StatsRing } from "./Mantine/StatsRing";
 import  image from "./BAF.png";
 import { InputTooltip } from "./Mantine/InputTooltip";
 import { DateInput } from '@mantine/dates';
-const apiUrl = process.env.DB_API_URL;
-const apiKey = process.env.DB_API_KEY;
+const apiUrl = import.meta.env.VITE_DB_API_URL;
+const apiKey = import.meta.env.VITE_DB_API_KEY;
 
 
 const theme = createTheme({
