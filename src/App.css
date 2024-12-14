@@ -1,0 +1,72 @@
+:root{
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  align-items: center;
+}
+.container {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BgAll{
+  width: 1200px;
+  padding: 25px;
+  background-color: #7ED4F4;
+  border-radius: 11.68px;
+  outline: none;
+  box-shadow: rgba(225, 228, 232, 0.2) 0px 0px 12px 0px inset ;
+  transition: all ease-in .25s   ; 
+}
+
+.Signature{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  overflow: hidden;
+}
+
+.SignatureImg{
+}
+
+.ImageSize{
+  width: 350px;
+}
+
+.ImageSize1{
+  
+}
+
+.BackgroundImage{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.bltrst{
+  margin-top: 50px;
+}
+
+
+
+@media (max-width: 1500.98px){
+  .bltrst{
+    margin-top: 150px;
+  }
+}
