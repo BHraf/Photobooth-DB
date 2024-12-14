@@ -31,9 +31,8 @@ function App() {
   const [net, setnew]  = useState(null);
   const [value, setValue] =useState(null);
   const [value1, setValue1] =useState(null);
-  
   const supabase = createClient(
-    `${apiUrl}`, `${apiKey}`
+    'https://xnpnysxhokmbjlwlmmzs.supabase.co', `${apiKey}`
   );
 
   function sumPrices(data) {
