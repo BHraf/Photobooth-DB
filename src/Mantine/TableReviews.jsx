@@ -1,5 +1,5 @@
 import {  Table ,Anchor } from '@mantine/core';
-
+import "./Mant.css"
 const data1 = [
     {
       NUMBER: 1,
@@ -80,7 +80,7 @@ export function TableReviews({data}) {
   });
 
   return (
-    <Table.ScrollContainer minWidth={800}>
+      <Table.ScrollContainer minWidth={800} >
       <Table  withColumnBorders striped highlightOnHover withTableBorder horizontalSpacing="sm" verticalSpacing="sm">
         <Table.Thead>
           <Table.Tr>
@@ -98,7 +98,10 @@ export function TableReviews({data}) {
                 </div></Table.Th>
           </Table.Tr>
         </Table.Thead>
-        <Table.Tbody>{rows}</Table.Tbody>
+        
+        <Table.Tbody >{rows} </Table.Tbody>
+        
+        
       </Table>
     </Table.ScrollContainer>
   );

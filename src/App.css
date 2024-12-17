@@ -9,6 +9,8 @@
   justify-content: center;
   background-color: #fff;
   align-items: center;
+  overflow-x: hidden;
+
 }
 .container {
   margin: 0 auto;
@@ -21,7 +23,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
+
+.Test_tables{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+  height: 47vh;
+
+}
+
 
 .BgAll{
   width: 1200px;
