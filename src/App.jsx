@@ -9,8 +9,8 @@ import { StatsRing } from "./Mantine/StatsRing";
 import  image from "./BAF.png";
 import { InputTooltip } from "./Mantine/InputTooltip";
 import { DateInput } from '@mantine/dates';
-//const apiUrl = import.meta.env.VITE_API_URL;
-//const apiKey = import.meta.env.VITE_API_KEY;
+const apiUrl = import.meta.env.VITE_API_URL;
+const apiKey = import.meta.env.VITE_API_KEY;
 
 
 const theme = createTheme({
@@ -32,7 +32,7 @@ function App() {
   const [value, setValue] =useState(null);
   const [value1, setValue1] =useState(null);
   const supabase = createClient(
-    'https://xnpnysxhokmbjlwlmmzs.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhucG55c3hob2ttYmpsd2xtbXpzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzM5OTU5MTUsImV4cCI6MjA0OTU3MTkxNX0.KwOL_cXdaNADEnTrOhijyFemikb3rh2fJZWxIIu8L3Q'
+    'https://xnpnysxhokmbjlwlmmzs.supabase.co', apiKey
   );
 
   function sumPrices(data) {
