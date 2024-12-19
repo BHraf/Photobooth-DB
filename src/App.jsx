@@ -32,7 +32,7 @@ function App() {
   const [value, setValue] =useState(null);
   const [value1, setValue1] =useState(null);
   const supabase = createClient(
-    'https://xnpnysxhokmbjlwlmmzs.supabase.co', apiKey
+    'https://xnpnysxhokmbjlwlmmzs.supabase.co', "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhucG55c3hob2ttYmpsd2xtbXpzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzM5OTU5MTUsImV4cCI6MjA0OTU3MTkxNX0.KwOL_cXdaNADEnTrOhijyFemikb3rh2fJZWxIIu8L3Q"
   );
 
   function sumPrices(data) {
@@ -231,6 +231,7 @@ function filterByDate(data, comparisonDate) {
   });
   console.log(donn);
 }
+
 
 function CompareDates(itemTime, compareDate) {
   let x = itemTime.getFullYear();
