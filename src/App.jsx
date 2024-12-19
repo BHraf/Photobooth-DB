@@ -32,7 +32,7 @@ function App() {
   const [value, setValue] =useState(null);
   const [value1, setValue1] =useState(null);
   const supabase = createClient(
-    'https://xnpnysxhokmbjlwlmmzs.supabase.co', apiKeyadd.
+    'https://xnpnysxhokmbjlwlmmzs.supabase.co', apiKey
   );
 
   function sumPrices(data) {
