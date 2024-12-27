@@ -25,7 +25,7 @@ export function StatsRing({last , MaleCent , sumPrices}) {
     { label: 'Users', stats: last, progress: 65, color: 'teal', icon: 'up' },
     { label: 'Male', stats: MaleCent + '%', progress: 72, color: 'blue', icon: 'up' },
     {
-      label: 'Prices',
+      label: 'Total',
       stats: sumPrices,
       progress: 52,
       color: 'red',
